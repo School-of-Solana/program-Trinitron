@@ -14,7 +14,7 @@ import {
   getDeleteDiscographyInstruction,
   getUpdateDiscographyInstruction,
   JUKEBOXDAPP_PROGRAM_ADDRESS,
-} from '../src'
+} from '../clients/js/src/generated'
 // @ts-ignore error TS2307 suggest setting `moduleResolution` but this is already configured
 import { loadKeypairSignerFromFile } from 'gill/node'
 import { PublicKey } from '@solana/web3.js'
@@ -41,7 +41,7 @@ describe('jukeboxdapp', () => {
       seeds: [Buffer.from('discography'), new PublicKey(payer.address).toBuffer()],
     })
   })
-
+//let content_seed = Uint8Array.from(Buffer.from(hexString, 'hex'));
   it('should create a new discography', async () => {
     // ARRANGE
     expect.assertions(5)

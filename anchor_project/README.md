@@ -1,10 +1,12 @@
 ## JukeBox App
 
-This is a Solana program written in Rust using the Anchor framework.
+This is a Solana program written in Rust using the Anchor framework and Codama for client generation.
 
-#### Commands
+#### Install Dependencies
 
-You can use any normal anchor commands. Move to the `anchor_project` directory and use the `anchor` commands for building and testing.
+```shell
+npm install
+```
 
 #### Sync the program id:
 
@@ -20,22 +22,22 @@ anchor keys sync
 anchor build
 ```
 
-#### Start the test validator with the program deployed:
+#### Build codama client:
 
 ```shell
-npm run anchor-localnet
+codama run js
 ```
 
 #### Run the tests
 
 ```shell
-npm run anchor-test
+anchor test
 ```
 
 #### Deploy to Devnet
 
 ```shell
-npm run anchor deploy --provider.cluster devnet
+anchor deploy --provider.cluster devnet
 ```
 
 ### Ackee Blockchain Security
