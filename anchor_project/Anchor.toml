@@ -1,0 +1,20 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+seeds = true
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+jukeboxdapp = "GZJDBWGfx29iRrPAPUHKcJbYy2n4vPSP4mWT9tiX9P9w"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "vitest"
