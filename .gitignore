@@ -1,8 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/anchor_project/node_modules
-anchor_project/clients
 /.pnp
 .pnp.*
 .yarn/*
@@ -44,5 +42,7 @@ next-env.d.ts
 # Anchor
 /anchor_project/.anchor
 /anchor_project/target
+/anchor_project/node_modules
+/anchor_project/clients
 test-ledger
 **/*.rs.bk
