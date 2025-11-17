@@ -1,28 +1,23 @@
-## Apps
-
-### Anchor
+## JukeBox App
 
 This is a Solana program written in Rust using the Anchor framework.
 
 #### Commands
 
-You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the
-command with `npm run`, eg: `npm run anchor`.
+You can use any normal anchor commands. Move to the `anchor_project` directory and use the `anchor` commands for building and testing.
 
 #### Sync the program id:
 
-Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the
-Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program. This will also update
-the constant in `anchor/src/basic-exports.ts` file.
+Running this command will create a new keypair in the `anchor_project/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
 
 ```shell
-npm run setup
+anchor keys sync
 ```
 
 #### Build the program:
 
 ```shell
-npm run anchor-build
+anchor build
 ```
 
 #### Start the test validator with the program deployed:
