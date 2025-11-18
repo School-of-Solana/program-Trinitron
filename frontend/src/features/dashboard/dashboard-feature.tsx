@@ -3,11 +3,14 @@ import React, { useState, useRef, useEffect } from 'react'
 import { useGetDiscographyAccountsQuery } from '../jukeboxdapp/data-access/use-get-discography-accounts-query'
 import { Combobox } from '@/components/ui/combobox'
 import { Button } from '@/components/ui/button'
+import { Account } from 'gill'
+import { Discography } from '@project/anchor'
 
 export default function DashboardFeature() {
   const [selectedSong, setSelectedSong] = useState('')
   const audioRef = useRef<HTMLAudioElement>(null)
   const { data: accounts, isLoading } = useGetDiscographyAccountsQuery()
+  type DiscographyAccount = Account<Discography, string>
 
   useEffect(() => {
     if (!selectedSong && audioRef.current) {
@@ -24,9 +27,9 @@ export default function DashboardFeature() {
   }, [selectedSong])
 
   const songs =
-    accounts?.map((account) => ({
-      value: account.account.songUrl,
-      label: `${account.account.artist} - ${account.account.songName}`,
+    accounts?.map((account: DiscographyAccount) => ({
+      value: account.data.songUrl,
+      label: `${account.data.artist} - ${account.data.songName}`,
     })) ?? []
 
   const handlePlay = () => {

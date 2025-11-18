@@ -2,12 +2,12 @@ import { useQuery } from '@tanstack/react-query';
 import { useSolana } from '@/components/solana/use-solana';
 import { useGetDiscographyAccountsQueryKey } from './use-get-discography-accounts-query-key';
 import {
-  fetchAllDiscography,
   getDiscographyDiscriminatorBytes,
+  fetchAllDiscography,
   JUKEBOXDAPP_PROGRAM_ADDRESS,
-} from '@project/anchor';
-import { Address, Base58EncodedBytes } from 'gill';
-import bs58 from 'bs58';
+} from '@project/anchor'
+import { Address, Base58EncodedBytes } from 'gill'
+import bs58 from 'bs58'
 
 export function useGetDiscographyAccountsQuery() {
   const { client } = useSolana();

@@ -21,7 +21,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@project/anchor": ["../anchor_project/clients/js/src/generated"],
+      "@project/anchor": ["clients/js/src/generated"],
       "@/*": ["./src/*"]
     }
   },
