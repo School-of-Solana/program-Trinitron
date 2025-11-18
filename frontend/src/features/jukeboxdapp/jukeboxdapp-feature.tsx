@@ -22,7 +22,7 @@ export default function JukeboxdappFeature() {
 
   return (
     <div>
-      <AppHero title="Jukeboxdapp" subtitle={'Run the program by clicking the "Run program" button.'}>
+      <AppHero title="Discography" subtitle={'Add your favorite song and mp3 link so it can be played on the dashboard!'}>
         <p className="mb-6">
           <JukeboxdappUiProgramExplorerLink />
         </p>
