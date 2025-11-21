@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("HapQLEoaLD5ZvatNkcVBKrCNKDJ4qnRJRMKyVke7cGjb");
+declare_id!("FqrWRRd9Zm5NosY73CjHowFCC44KbxXbUmQPpGrK4PMV");
 
 #[program]
 pub mod jukeboxdapp {

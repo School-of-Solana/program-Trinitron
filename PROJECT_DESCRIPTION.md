@@ -2,7 +2,7 @@
 
 **Deployed Frontend URL:** https://jukebox-dapp.vercel.app/
 
-**Solana Program ID:** HapQLEoaLD5ZvatNkcVBKrCNKDJ4qnRJRMKyVke7cGjb
+**Solana Program ID:** FqrWRRd9Zm5NosY73CjHowFCC44KbxXbUmQPpGrK4PMV
 
 ## Project Overview
 
@@ -13,7 +13,7 @@
 
 ### Key Features
 - **CreateDiscography**: Initialize a new discography account for your wallet
-- **UpdateDiscography**: Update discography with a new *song name*, *album* and *song url* 
+- **UpdateDiscography**: Update discography with a new *song name*, *album* and *song url*
 - **DeleteDiscography**: Removes discography account from chain
 
 ### How to use Juke Box
@@ -67,4 +67,4 @@ anchor test     # run tests
 
 ### Additional Notes for Evaluators
 
-I enjoyed Solana training course. It was challenging for me to build this app. The most difficult part is Codama client integration and to be honest legacy web3.js looks more robust. I am looking forward to join ackee security team in Prague since this blockchain nowadays a new pation for me (cal.:+420773239167).  
+I enjoyed Solana training course. It was challenging for me to build this app. The most difficult part is Codama client integration and to be honest legacy web3.js looks more robust. I am looking forward to join ackee security team in Prague since this blockchain nowadays a new pation for me (call.:+420773239167).

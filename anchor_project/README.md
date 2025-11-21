@@ -28,13 +28,13 @@ anchor build
 codama run js
 ```
 
-#### Run the tests
+#### Run the tests:
 
 ```shell
 anchor test
 ```
 
-#### Deploy to Devnet
+#### Deploy to Devnet:
 
 ```shell
 anchor deploy --provider.cluster devnet

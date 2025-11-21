@@ -6,7 +6,10 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-jukeboxdapp = "HapQLEoaLD5ZvatNkcVBKrCNKDJ4qnRJRMKyVke7cGjb"
+jukeboxdapp = "FqrWRRd9Zm5NosY73CjHowFCC44KbxXbUmQPpGrK4PMV"
+
+[programs.devnet]
+jukeboxdapp = "FqrWRRd9Zm5NosY73CjHowFCC44KbxXbUmQPpGrK4PMV"
 
 [registry]
 url = "https://api.apr.dev"
